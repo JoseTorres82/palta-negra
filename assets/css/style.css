@@ -12,12 +12,14 @@
     margin: 0 auto;
     scroll-behavior: smooth;
 }
-:root{
-    --colorplata:color:#777777;
+
+:root {
+    --colorplata: color:#777777;
 }
+
 body {
     margin: 0 auto;
-    background: #fff;
+    background: #eff2f4;
 
 }
 
@@ -36,6 +38,7 @@ header {
     height: 60px;
 
 }
+
 header {
     border-bottom: solid 0.5px #020202;
 }
@@ -46,19 +49,22 @@ li {
     text-decoration: none;
     letter-spacing: 1.5px;
 }
-.nav__menu ul .brands{
+
+.nav__menu ul .brands {
     width: 80px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
+
 .nav__menu ul .brands a {
     margin: 0 auto;
     width: 100%;
     transition: all .5s ease;
 }
-.nav__menu ul .brands a:hover{
+
+.nav__menu ul .brands a:hover {
     transform: scale(1.2);
     filter: blur(55%);
     color: #476cf3;
@@ -211,7 +217,7 @@ header {
 }
 
 .hero {
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
     width: 100%;
     height: 600px;
@@ -220,7 +226,7 @@ header {
     background-color: rgb(0, 0, 0, 95%);
     background-image: url(/assets/images/community-manager-870x520.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     margin-top: 55px;
     display: flex;
     flex-direction: row;
@@ -301,6 +307,7 @@ header {
 
 
 }
+
 .hero .contenedor__hero .location {
     width: 100%;
     display: flex;
@@ -314,7 +321,7 @@ header {
     padding-bottom: 50px;
 }
 
-.hero .contenedor__hero .location i{
+.hero .contenedor__hero .location i {
     font-size: 30px;
 }
 
@@ -341,7 +348,7 @@ li {
 }
 
 .section-title {
-
+    width: 100%;
     z-index: 2;
     display: table-cell;
     vertical-align: middle;
@@ -368,21 +375,22 @@ li {
     padding: 0 3%;
     max-width: 1200px;
 }
+
 .servicios {
-line-height: 1.7;
-border: 0;
-vertical-align: baseline;
-font-size: 100%;
-position: relative;
-padding: 0 3%;
-max-width: 1200px;
-margin: 90px auto;
-color: #777777;
+    line-height: 1.7;
+    border: 0;
+    vertical-align: baseline;
+    font-size: 100%;
+    position: relative;
+    padding: 0 3%;
+    max-width: 1200px;
+    margin: 90px auto;
+    color: #777777;
 }
 
 .servicios .servicio {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     margin: 20px;
     align-items: center;
 }
@@ -390,9 +398,11 @@ color: #777777;
 .servicios .servicio img {
     width: 320px;
 }
+
 .servicios .servicio ul li {
     color: #4b4b4b;
 }
+
 .servicios .servicio .servicios-text {
     width: 320px;
     text-align: start;
@@ -482,9 +492,8 @@ section {
 
 .aboutUs {
     max-width: 1200px;
-    width: 100%;
     margin: 0 auto;
-    /* background: #1d1d1d; */
+    width: 100%;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -493,14 +502,16 @@ section {
     line-height: 1.5;
     letter-spacing: 1px;
 }
-.aboutUs h2{
+
+.aboutUs h2 {
     margin-top: 20px;
     padding: 60px;
     line-height: 1.5;
     margin-bottom: 15px;
-    background: #1d1d1d;    
+    background: #1d1d1d;
 }
-.aboutUs p  {
+
+.aboutUs p {
     padding: 60px;
     line-height: 1.5;
     margin-bottom: 30px;
@@ -516,6 +527,18 @@ section {
     border-radius: 50%;
 }
 
+.aboutUs .aboutUs-text {
+    color: #4b4b4b;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aboutUs .aboutUs-text span {
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
 /* footer */
 
 .footer {
@@ -525,51 +548,80 @@ section {
 }
 
 .footer .grupo-1 {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     width: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
-    padding: 45px 0px;
+    padding: 35px 0px;
+    justify-items: center;
 }
 
 .footer .grupo-1 .box figure {
     width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .footer .grupo-1 .box figure img {
-    width: 250px;
+    width: 160px;
+    height: 140px;
+    background: #fff;
+    border-radius: 50%;
+    margin-bottom: 15px;
 }
 
 .footer .grupo-1 .box h2 {
+    width: 100%;
     color: #4b4b4b;
     margin-bottom: 25px;
     font-size: 20px;
     margin-left: 15px;
+    text-align: center;
 }
 
 .footer .grupo-1 .box P {
+    width: 100%;
     color: #4b4b4b;
     margin-bottom: 10px;
+    padding: 15px;
+    text-align: justify;
+    line-height: 1.5;
+    letter-spacing: 1px;
 }
 
 .footer .grupo-1 .box .footer__contacto {
     color: #4b4b4b;
     margin-bottom: 10px;
-    display: inline-block;
-    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    text-align: left;
+    
 }
 
-.footer .grupo-1 .box .footer__contacto a i {
+.footer .grupo-1 .box .footer__contacto a, i {
     max-width: 300px;
-    color: #4b4b4b;
+    color: #939292;
     cursor: pointer;
     padding-bottom: 10px;
+    text-decoration: none;
+    
+}
+
+.footer .grupo-1 .box .logo {
+    width: 185px;
+    text-align: center;
+    background-color: #fff;
+    background-size: cover;
+    border: solid 1px #fff;
+}
+.footer .grupo-1 .box .logo span {
+    background: #000;
+    color: #fff;
 }
 
 .footer .grupo-1 .box .redes a {

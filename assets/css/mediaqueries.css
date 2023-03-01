@@ -11,6 +11,7 @@
 @media (max-width:992px) {
     * {
         margin: 0 auto;
+        place-content: center;
     }
 
     /*   ▼ Menú ▼  */
@@ -139,90 +140,49 @@
     }
 
     /*   ▲ Menú ▲ */
-
-    /* ↓↓ Video Banner ↓↓ */
-    .bannervid {
+    hero .contenedor__hero {
         margin: 0 auto;
-        width: 100%;
-        position: relative;
-    }
-
-    video {
-        width: auto;
-        margin: 0 auto;
-        position: absolute;
-        top: 0;
-        left: 0;
         width: 100%;
         height: 100%;
-        object-fit: cover;
-    }
-
-    .text-banner {
-        font-size: 100px;
-        mix-blend-mode: multiply;
-        margin-top: 80px;
-    }
-
-    .hero__container {
-        max-width: 980px;
-        margin: 0 auto;
-        width: 100%;
-    }
-
-    .hero__container .hero-img img {
-        width: 970px;
-        margin-top: 20px;
-        height: 350px;
-        overflow: hidden;
-        place-content: center;
-        opacity: 45%;
-        border-radius: 3px;
-    }
-
-    .hero__container h2 {
-        z-index: 1;
-        width: 100%;
-        font-family: 'Nova Flat', cursive;
-        text-align: center;
-        text-transform: uppercase;
-        color: #FFF;
-        font-size: 1.5rem;
-        line-height: 1.5px;
-        margin-top: 300px;
-        top: 0;
-        left: 0;
-        position: absolute;
-        pointer-events: none;
-    }
-
-
-    /* ↑↑ Video Banner ↑↑  */
-   
-    .media {
-        max-width: 990;
-        margin: 0 auto;
-        width: 100%;
+        margin-top: 0px;
+        background: rgb(0, 0, 0, 55%);
+        z-index: 0;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
-        overflow: hidden;
-        position: relative;
     }
 
-    .media .carrusel {
-        width: 100%;
-        height: 400;
-        display: flex;
-        gap: 25px;
-    }
-
-    .contact-info iframe {
-        max-width: 300px;
-        margin: 0 auto;
-        padding: 0;
+    .hero .hero__text {
+        width: 90%;
+        justify-content: center;
         align-items: center;
+
+    }
+    .hero .hero__text p {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .hero .hero__text p a {
+        width: 100%;
+                }
+    .servicios .servicio {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 20px;
+        align-items: center;
+    }
+    .footer .grupo-1 {
+        /* max-width: 1200px; */
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+        padding: 35px 0px;
+        justify-items: center;
     }
 }
 
@@ -480,8 +440,18 @@
         opacity: 45%;
         border-radius: 3px;
     }
+    .footer .grupo-1 {
+        /* max-width: 1200px; */
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+        padding: 35px 0px;
+        justify-items: center;
+    }
 
-    .cards_secction {
+/*     .cards_secction {
         max-width: 315.9px;
         width: 100%;
         margin: 0;
@@ -510,5 +480,8 @@
 
     .cards_secction .cards__container img:hover {
         transform: none;
+    } */
+    .footer {
+        display: block;
     }
 }
