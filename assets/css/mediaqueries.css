@@ -60,7 +60,7 @@
         max-width: 992px;
         width: 100%;
         margin: 0 auto;
-        display: grid;
+        display: grid; 
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 50px;
         padding: 35px 0px;
@@ -69,4 +69,28 @@
     }
 
 
+}
+
+/* 768px */
+@media (max-width:768px){
+    .hero .contenedor__hero .alinear {
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        margin-top: 10px;
+        top: -20;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }   
+    .hero .hero__text {
+        margin-left: 0;
+    }
+    .servicios .servicio {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 20px;
+        justify-items: center;
+        align-items: center;
+    }
 }
