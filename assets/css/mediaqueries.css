@@ -6,8 +6,15 @@
         box-sizing: border-box;
         place-content: center;
     }
+    header {
+        max-width: 992px;
+        width: 100%;
+        margin: 0 auto;
+    }
     .hero {
         display: block;
+        width: auto;
+        height: auto;
     }
     .hero .hero__text {
         width: 450px;
